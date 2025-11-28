@@ -2,6 +2,7 @@ data "aws_region" "current" {}
 
 variable "vpc_name" {
   type = string
+  default = "vpc-terraform"
 }
 
 #VPC
@@ -63,11 +64,6 @@ resource "aws_internet_gateway" "internet_gateway" {
   tags = {
     Name = "internet_gateway"
   }
-}
-
-resource "aws_internet_gateway_attachment" "internet_gateway_att" {
-  internet_gateway_id = aws_internet_gateway.internet_gateway.id
-  vpc_id              = aws_vpc.minha_vpc.id
 }
 
 #TABELA DE ROTA - CONECTAR AO IGW
