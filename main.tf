@@ -13,6 +13,21 @@ resource "aws_vpc" "minha_vpc" {
     }
 }
 
+resource "aws_flow_log" "vpc_flow_log" {
+  iam_role_arn    = "arn:aws:s3:::clc14-guxxis-terraform"
+  log_destination = "s3"
+  traffic_type    = "ALL"
++ vpc_id          = aws_vpc.minha_vpc.id
+}
+
+resource "aws_default_security_group" "default" {
+  vpc_id = aws_vpc.minha_vpc.id
+
+  tags = {
+    Name  = "my-iac-sg"
+  }
+}
+
 #SUBNET PUBLIC SUBNET 1A
 resource "aws_subnet" "public_subnet_1a" {
   vpc_id     = aws_vpc.minha_vpc.id
@@ -93,7 +108,9 @@ resource "aws_route_table_association" "b" {
 }
 
 #CRIAR ELASTIC IP 1A
-resource "aws_eip" "ip_address_1a" {}
+resource "aws_eip" "ip_address_1a" {
+  domain = "vpc"
+}
 
 #NATGATEWAY 1A
 resource "aws_nat_gateway" "nat_gateway_1a" {
@@ -108,7 +125,9 @@ resource "aws_nat_gateway" "nat_gateway_1a" {
 }
 
 #CRIAR ELASTIC IP 1B
-resource "aws_eip" "ip_address_1b" {}
+resource "aws_eip" "ip_address_1b" {
+  domain = "vpc"
+}
 
 #NATGATEWAY 1B
 resource "aws_nat_gateway" "nat_gateway_1b" {
