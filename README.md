@@ -49,16 +49,16 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_internet_gateway"></a> [internet\_gateway](#output\_internet\_gateway) | n/a |
-| <a name="output_ip_address_1a"></a> [ip\_address\_1a](#output\_ip\_address\_1a) | n/a |
-| <a name="output_ip_address_1b"></a> [ip\_address\_1b](#output\_ip\_address\_1b) | n/a |
-| <a name="output_nat_gateway_1a"></a> [nat\_gateway\_1a](#output\_nat\_gateway\_1a) | n/a |
-| <a name="output_nat_gateway_1b"></a> [nat\_gateway\_1b](#output\_nat\_gateway\_1b) | n/a |
-| <a name="output_private_route_table_1a"></a> [private\_route\_table\_1a](#output\_private\_route\_table\_1a) | n/a |
-| <a name="output_private_route_table_1b"></a> [private\_route\_table\_1b](#output\_private\_route\_table\_1b) | n/a |
-| <a name="output_private_subnet_1a"></a> [private\_subnet\_1a](#output\_private\_subnet\_1a) | n/a |
-| <a name="output_private_subnet_1b"></a> [private\_subnet\_1b](#output\_private\_subnet\_1b) | n/a |
-| <a name="output_public_route_table"></a> [public\_route\_table](#output\_public\_route\_table) | n/a |
-| <a name="output_public_subnet_1a"></a> [public\_subnet\_1a](#output\_public\_subnet\_1a) | n/a |
-| <a name="output_public_subnet_1b"></a> [public\_subnet\_1b](#output\_public\_subnet\_1b) | n/a |
-| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | OUTPUT |
+| <a name="output_internet_gateway"></a> [internet\_gateway](#output\_internet\_gateway) | ID da Internet Gateway |
+| <a name="output_ip_address_1a"></a> [ip\_address\_1a](#output\_ip\_address\_1a) | ID do IP Do NAT Gateway 1A |
+| <a name="output_ip_address_1b"></a> [ip\_address\_1b](#output\_ip\_address\_1b) | ID do IP Do NAT Gateway 1B |
+| <a name="output_nat_gateway_1a"></a> [nat\_gateway\_1a](#output\_nat\_gateway\_1a) | ID da NAT Gateway 1A |
+| <a name="output_nat_gateway_1b"></a> [nat\_gateway\_1b](#output\_nat\_gateway\_1b) | ID da NAT Gateway 1A |
+| <a name="output_private_route_table_1a"></a> [private\_route\_table\_1a](#output\_private\_route\_table\_1a) | ID da Private Route Table 1A |
+| <a name="output_private_route_table_1b"></a> [private\_route\_table\_1b](#output\_private\_route\_table\_1b) | ID da Private Route Table 1B |
+| <a name="output_private_subnet_1a"></a> [private\_subnet\_1a](#output\_private\_subnet\_1a) | ID da Private Subnet 1A |
+| <a name="output_private_subnet_1b"></a> [private\_subnet\_1b](#output\_private\_subnet\_1b) | ID da Private Subnet 1B |
+| <a name="output_public_route_table"></a> [public\_route\_table](#output\_public\_route\_table) | ID da Public Route Table |
+| <a name="output_public_subnet_1a"></a> [public\_subnet\_1a](#output\_public\_subnet\_1a) | ID da Public Subnet 1A |
+| <a name="output_public_subnet_1b"></a> [public\_subnet\_1b](#output\_public\_subnet\_1b) | ID da Public Subnet 1B |
+| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | ID da VPC |
