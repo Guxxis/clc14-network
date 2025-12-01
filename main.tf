@@ -14,10 +14,10 @@ resource "aws_vpc" "minha_vpc" {
 }
 
 resource "aws_flow_log" "vpc_flow_log" {
-  iam_role_arn    = "arn:aws:s3:::clc14-guxxis-terraform"
-  log_destination = "s3"
-  traffic_type    = "ALL"
-+ vpc_id          = aws_vpc.minha_vpc.id
+  log_destination    = "arn:aws:s3:::clc14-guxxis-terraform"
+  log_destination_type = "s3"
+  traffic_type      = "ALL"
+  vpc_id            = aws_vpc.minha_vpc.id
 }
 
 resource "aws_default_security_group" "default" {
