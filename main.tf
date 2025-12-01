@@ -2,7 +2,7 @@ data "aws_region" "current" {}
 
 variable "vpc_name" {
   type = string
-  default = "vpc-terraform"
+  default = "vpc-terraform2"
 }
 
 #VPC
